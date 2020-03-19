@@ -17,7 +17,7 @@ const renderApp = (Component, appRoot, store) => {
       window.__isAppReady = true
     })
 }
-
+const g=()=>{let theme2=LocalStorage.getItem('https://www.swadesi.com/news/assam-is-rich-in-different-treesso-cane-products-can-be-easily-found-here/')
 const prepareStoreData = () => {
   let theme = LocalStorage.getItem('theme')
 
