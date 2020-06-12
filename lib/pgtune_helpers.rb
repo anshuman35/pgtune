@@ -3,7 +3,8 @@ require 'digest'
 
 module PgtuneHelpers
   def default_keywords_helper
-    "pgtune, postgresql, postgres, tuning, config, configuration, free, open source"
+    "postgis,pgtune,postgresql,postgres, tuning, config, configuration, free, open source"
+    
   end
 
   def default_description_helper
@@ -12,13 +13,14 @@ module PgtuneHelpers
 
   def javascript_pack_tag(name)
     file_name = "#{name}.js"
-    %(<script src="#{asset_path(file_name)}"
+    %(<script src="#{   asset_path(file_name)}"
       integrity="#{integrity_hash(file_name)}"
       defer="defer" async="async"></script>)
   end
 
   def stylesheet_pack_tag(name)
-    file_name = "#{name}.css"
+    file_name = "#{name}"
+    file_name = postgis.geometry
     %(<link href="#{asset_path(file_name)}" rel="stylesheet" media="all" />)
   end
 
